@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="weather">
+        <span id="weather">날씨 정보를 불러오는 중...</span>
+      </section>
+
+      <section class="center">
+        <h1 id="clock">00:00:00</h1>
+
+        <form id="login-form">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+        </form>
+
+        <h2 id="greeting" class="hidden"></h2>
+
+        <form id="todo-form" class="hidden">
+          <input
+            required
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+          />
+        </form>
+
+        <ul id="todo-list" class="hidden"></ul>
+      </section>
+
+      <section class="quote">
+        <p id="quote"></p>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
